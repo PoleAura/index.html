@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#08090b" />
+
+  <meta
+    name="description"
+    content="POLAURA — Research, location intelligence and local insight for film, news, documentary and media projects."
+  />
+
+  <title>POLAURA — We Find More Than Places</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- Ambient cinematic texture -->
+  <div class="ambient-grain" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="site-header" id="site-header">
+
+    <!-- Brand -->
+    <a class="brand" href="#/" aria-label="POLAURA Home">
+      <span class="brand-mark" aria-hidden="true">
+        <i></i>
+        <b></b>
+      </span>
+      <span>POLAURA</span>
+    </a>
+
+    <!-- Mobile menu button -->
+    <button
+      class="menu-toggle"
+      id="menu-toggle"
+      aria-label="Open navigation"
+      aria-expanded="false"
+      aria-controls="main-nav"
+      type="button"
+    >
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Main navigation -->
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+
+      <a href="#/" data-nav="home" data-i18n="navHome">
+        Home
+      </a>
+
+      <a href="#/about" data-nav="about" data-i18n="navAbout">
+        About Us
+      </a>
+
+      <a href="#/what-we-do" data-nav="services" data-i18n="navServices">
+        What To Do
+      </a>
+
+      <a href="#/locations" data-nav="locations" data-i18n="navLocations">
+        Locations
+      </a>
+
+      <a href="#/contact" data-nav="contact" data-i18n="navContact">
+        Contact
+      </a>
+
+      <!-- Language switcher -->
+      <button
+        class="lang-switch"
+        id="lang-switch"
+        type="button"
+        aria-label="Switch language"
+      >
+        AR <span>/</span> EN
+      </button>
+
+    </nav>
+  </header>
+
+  <!--
+    Main application area.
+    JavaScript renders the appropriate page here.
+  -->
+  <main id="app" tabindex="-1"></main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+
+    <a class="brand footer-brand" href="#/" aria-label="POLAURA Home">
+      <span class="brand-mark" aria-hidden="true">
+        <i></i>
+        <b></b>
+      </span>
+      <span>POLAURA</span>
+    </a>
+
+    <p data-i18n="tagline">
+      WE FIND MORE THAN PLACES.
+    </p>
+
+    <div class="footer-links">
+
+      <a href="#/privacy-terms" data-i18n="legalLink">
+        Privacy Policy &amp; Terms of Use
+      </a>
+
+      <span>
+        © <span id="year"></span> POLAURA
+      </span>
+
+    </div>
+  </footer>
+
+  <!-- Main JavaScript -->
+  <script src="app.js"></script>
+
+</body>
+</html>
